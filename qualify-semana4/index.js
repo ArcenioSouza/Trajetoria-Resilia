@@ -9,7 +9,7 @@
 //   }
 // }
 
-// //qualify 2
+//qualify 2
 // function acumular(num) {
 //   var cont = 1;
 //   var soma = 0;
@@ -22,7 +22,7 @@
 
 // //qualify 3
 // function filterArr(arr) {
-//   return arr.filter((array) => typeof array === "number");
+//   return arr.filter((array) => typeof array === "string");
 // }
 
 // //qualify 4
