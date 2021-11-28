@@ -1,20 +1,20 @@
 function encontrarPote(array, busca){
-   var valor = false
+   var valorEncontrado = false
    for(var i = 0; i < array.length; i++){
       if(array[i] == busca){
          console.log("Encontrado no pote 0")
-         valor = true
+         valorEncontrado = true
          break
       }
       for(var j = 0; j < array[i].length; j++){
          if(array[i][j] == busca){
-            valor = true
+            valorEncontrado = true
             console.log("Encontrado no pote 1")
             break
          }
       }
    }
-   if(valor == false){
+   if(valorEncontrado == false){
       console.log("Item não encontrado")
    }
    
