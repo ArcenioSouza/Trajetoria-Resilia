@@ -17,7 +17,7 @@ function validaCpf(){
    while(valida === false){
       var cpfUsuario = prompt("insira seu CPF")
       var cpfSemPonto = cpfUsuario.replaceAll(".", "")
-      var cpfSemTraco = cpfSemPonto.replaceAll("-", "")
+      var cpfSemTraco = cpfSemPonto.replaceAll("-", "")      
 
       if(cpfSemTraco.length == 11){
          valida = true
