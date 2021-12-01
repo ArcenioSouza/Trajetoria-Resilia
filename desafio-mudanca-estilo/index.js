@@ -1,8 +1,7 @@
 var divPrincipal = document.querySelector('#principal')
 
-var div1 = document.querySelector('#interna1')
-var div2 = document.querySelector('#interna2')
-var div3 = document.querySelector('#interna3')
+var divs = document.querySelectorAll('[click-fica-vermelho]')
+
 
 divPrincipal.addEventListener("click", function(){
    if(divPrincipal.style.flexDirection == "row"){
@@ -12,16 +11,12 @@ divPrincipal.addEventListener("click", function(){
    }
 })
 
-div1.addEventListener('click',function(){
-   div1.style.backgroundColor = "red"
-})
-
-div2.addEventListener('click',function(){
-   div2.style.backgroundColor = "red"
-})
-
-div3.addEventListener('click',function(){
-   div3.style.backgroundColor = "red"
-})
+Array.from(divs).forEach(e => e.addEventListener('click', () => {
+   if(e.style.backgroundColor != "red"){
+      e.style.backgroundColor = "red"
+   }else{
+      e.style.backgroundColor = "green"
+   }
+}))
 
 
