@@ -8,7 +8,12 @@ var divResposta = document.querySelector("#resposta");
 
 var selectOption = document.querySelector("#selectOption");
 
-var alfabeto = "abcdefghijklmnopqrstuvwxyz";
+var inputNumber = document.querySelector('#input-number')
+
+var valueIncrement = document.querySelector('#inputNumberValue')
+
+
+var alfabeto = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
 
 function codificarCesar() {
   var textCode = document.querySelector("#text-input").value;
@@ -18,19 +23,8 @@ function codificarCesar() {
   for (var i = 0; i < textMinusculo.length; i++) {
     for (var j = 0; j < alfabeto.length; j++)
       if (textMinusculo[i] == alfabeto[j]) {
-        if (j == 24) {
-          textoCodificadoCesar += alfabeto[0];
-          break;
-        } else if (j == 25) {
-          textoCodificadoCesar += alfabeto[1];
-          break;
-        } else if (j == 26) {
-          textoCodificadoCesar += alfabeto[2];
-          break;
-        } else {
-          textoCodificadoCesar += alfabeto[j + 3];
-          break;
-        }
+        textoCodificadoCesar += alfabeto[j + parseInt(valueIncrement.value)];
+        break
       } else if (textMinusculo[i] == " ") {
         textoCodificadoCesar += " ";
         break;
@@ -42,31 +36,41 @@ function codificarCesar() {
 function decodificarCesar() {
   var textCode = document.querySelector("#text-input").value;
   var textMinusculo = textCode.toLowerCase();
-  var textoDecodificadoCesar = "";
+  var textoCodificadoCesar = "";
 
   for (var i = 0; i < textMinusculo.length; i++) {
-    for (var j = 0; j < alfabeto.length; j++)
+    for (var j = alfabeto.length; j >= 0; j++)
       if (textMinusculo[i] == alfabeto[j]) {
-        if (j == 0) {
-          textoDecodificadoCesar += alfabeto[24];
-          break;
-        } else if (j == 1) {
-          textoDecodificadoCesar += alfabeto[25];
-          break;
-        } else if (j == 2) {
-          textoDecodificadoCesar += alfabeto[26];
-          break;
-        } else {
-          textoDecodificadoCesar += alfabeto[j - 3];
-          break;
-        }
+        textoCodificadoCesar += alfabeto[j - parseInt(valueIncrement.value)];
+        break
       } else if (textMinusculo[i] == " ") {
-        textoDecodificadoCesar += " ";
+        textoCodificadoCesar += " ";
         break;
       }
   }
-  return textoDecodificadoCesar;
+  return textoCodificadoCesar;
+  
 }
+
+function codificaBase() {
+  var textCode = document.querySelector("#text-input").value;
+  var binario = btoa(textCode);
+  return binario;
+}
+
+function decodificaBase() {
+  var textCode = document.querySelector("#text-input").value;
+  var binario = atob(textCode);
+  return binario;
+}
+
+selectOption.addEventListener('change', function(){
+  if(selectOption.value == "Cifra de César"){
+    inputNumber.style.display = "block"
+  }else{
+    inputNumber.style.display = "none"
+  }
+})
 
 radioCodificar.addEventListener("click", function () {
   btn.innerText = "Codificar Mensagem";
@@ -84,9 +88,13 @@ btn.addEventListener("click", function (e) {
     } else {
       var resposta = decodificarCesar();
     }
-    divResposta.innerHTML = `<h3>Cifra de César</h3><h4>${resposta}</h4>`;
   } else {
-    var textCode = document.querySelector("#text-input").value;
-    divResposta.innerHTML = `<h3>Base64</h3><h4>${textCode}</h4>`;
+    if (radioCodificar.checked) {
+      var resposta = codificaBase();
+    } else {
+      var resposta = decodificaBase();
+    }
   }
+  console.log(valueIncrement.value)
+  divResposta.innerHTML = `<h3>${selectOption.value}</h3><h4>${resposta}</h4>`;
 });
