@@ -8,10 +8,9 @@ var divResposta = document.querySelector("#resposta");
 
 var selectOption = document.querySelector("#selectOption");
 
-var inputNumber = document.querySelector('#input-number')
+var inputNumber = document.querySelector("#input-number");
 
-var valueIncrement = document.querySelector('#inputNumberValue')
-
+var valueIncrement = document.querySelector("#inputNumberValue");
 
 var alfabeto = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
 
@@ -24,7 +23,7 @@ function codificarCesar() {
     for (var j = 0; j < alfabeto.length; j++)
       if (textMinusculo[i] == alfabeto[j]) {
         textoCodificadoCesar += alfabeto[j + parseInt(valueIncrement.value)];
-        break
+        break;
       } else if (textMinusculo[i] == " ") {
         textoCodificadoCesar += " ";
         break;
@@ -42,14 +41,13 @@ function decodificarCesar() {
     for (var j = alfabeto.length; j >= 0; j++)
       if (textMinusculo[i] == alfabeto[j]) {
         textoCodificadoCesar += alfabeto[j - parseInt(valueIncrement.value)];
-        break
+        break;
       } else if (textMinusculo[i] == " ") {
         textoCodificadoCesar += " ";
         break;
       }
   }
   return textoCodificadoCesar;
-  
 }
 
 function codificaBase() {
@@ -64,13 +62,13 @@ function decodificaBase() {
   return binario;
 }
 
-selectOption.addEventListener('change', function(){
-  if(selectOption.value == "Cifra de César"){
-    inputNumber.style.display = "block"
-  }else{
-    inputNumber.style.display = "none"
+selectOption.addEventListener("change", function () {
+  if (selectOption.value == "Cifra de César") {
+    inputNumber.style.display = "block";
+  } else {
+    inputNumber.style.display = "none";
   }
-})
+});
 
 radioCodificar.addEventListener("click", function () {
   btn.innerText = "Codificar Mensagem";
@@ -95,6 +93,6 @@ btn.addEventListener("click", function (e) {
       var resposta = decodificaBase();
     }
   }
-  console.log(valueIncrement.value)
+  console.log(valueIncrement.value);
   divResposta.innerHTML = `<h3>${selectOption.value}</h3><h4>${resposta}</h4>`;
 });

@@ -10,30 +10,39 @@
     <form>
       <label for="text-input">Digite a mensagem aqui:</label><br />
       <input type="text" name="text-input" id="text-input" /><br /><br />
-      <label for="selectOption">Qual tipo de codificação você deseja:</label><br />
+      <label for="selectOption">Qual tipo de codificação você deseja:</label>
+
+      <br />
 
       <select name="selectOption" id="selectOption">
         <option value="Escolha uma opção">Escolha uma das opções</option>
         <option value="Cifra de César">Cifra de César</option>
         <option value="Base64">Base64</option>
       </select>
-
-      <div id="input-number" style="display: none;">
-        <label for="input-number">Escolha o valor da chave</label><br>
-        <input type="number" name="input-number" max="25" min="1" id="inputNumberValue">
-      </div>
       
+      <br />
 
-      <br /><br />
+      <div id="input-number" style="display: none">
+        <br>
+        <label for="input-number">Escolha o valor da chave</label><br />
+        <input
+          type="number"
+          name="input-number"
+          max="25"
+          min="1"
+          id="inputNumberValue"
+        />
+      </div>
+
+      <br />
+
       <input type="radio" name="codificar" id="radioCodificar" />Codificar
       <input type="radio" name="codificar" id="radioDecodificar" />Decodificar
       <br /><br />
       <button id="btnCode">Button</button>
     </form>
 
-    <div id="resposta">
-
-    </div>
+    <div id="resposta"></div>
 
     <script src="./index.js"></script>
   </body>
