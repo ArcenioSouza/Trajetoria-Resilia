@@ -1,6 +1,8 @@
 var cachorro = {
+   
    nome: '',
    dataNascimento: '',
+
    latir: function(){
       alert("O cachorro latiu")
    },
