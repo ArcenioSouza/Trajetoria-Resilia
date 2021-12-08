@@ -28,7 +28,7 @@ body{
    width: 180px;
    border: 2px solid #000;
    border-radius: 20px;
-   margin: 8px auto;
+   margin: 8px 8px;
 }
 
 .cardPoke[grass]{
