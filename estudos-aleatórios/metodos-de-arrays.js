@@ -1,6 +1,4 @@
-
-
-// //MÉTODOS USADOS EM ARRAYS QUE SUBSTITUEM OS LAÇOS DE REPETIÇÃO COMO O FOR!
+//MÉTODOS USADOS EM ARRAYS QUE SUBSTITUEM OS LAÇOS DE REPETIÇÃO COMO O FOR!
 
 let frutas = ['maçã', 'limão', 'laranja', 'pera']
 
@@ -33,7 +31,7 @@ const qtdDeCores = cores.map(function(cor, indice){
 
    if (cor == 'azul'){
       return 'adoro AZUL' //aqui eu vou criar um outro array na minha variável qtdDeCores que muda as informações.
-   } else {                //Ela virá transformada segundo as condições que passei dentro do if.
+   } else {          //Ela virá transformada segundo as condições que passei dentro do if.
       return cor
    }
 })
