@@ -2,20 +2,21 @@
 
 // //MÉTODOS USADOS EM ARRAYS QUE SUBSTITUEM OS LAÇOS DE REPETIÇÃO COMO O FOR!
 
-// let frutas = ['maçã', 'limão', 'laranja', 'pera']
+let frutas = ['maçã', 'limão', 'laranja', 'pera']
 
-// // método forEach ---> Percorre os itens do array e executa uma função, mas não retorna nada.
-//                      //a função dentro do forEach pode receber dois tipos de informação, o item do array e o índice do array que ele se encontra.
-// frutas.forEach(function(fruta, indice){
+// método forEach ---> Percorre os itens do array e executa uma função, mas não retorna nada.
 
-//    //aqui podemos fazer várias coisas com essas informações... por exemplo...
+                     //a função dentro do forEach pode receber dois tipos de informação, o item do array e o índice do array que ele se encontra.
+frutas.forEach(function(fruta, indice){
 
-//    console.log(`A fruta ${fruta} está no índice ${indice} do array`)
-//          //Resposta  // A fruta maçã está no índice 0 do array
-//                      // A fruta limão está no índice 1 do array
-//                      // A fruta laranja está no índice 2 do array
-//                      // A fruta pera está no índice 3 do array
-// })
+   //aqui podemos fazer várias coisas com essas informações... por exemplo...
+
+   console.log(`A fruta ${fruta} está no índice ${indice} do array`)
+         //Resposta  // A fruta maçã está no índice 0 do array
+                     // A fruta limão está no índice 1 do array
+                     // A fruta laranja está no índice 2 do array
+                     // A fruta pera está no índice 3 do array
+})
 
 //MÉTODOS USADOS EM ARRAYS QUE SUBSTITUEM OS LAÇOS DE REPETIÇÃO COMO O FOR!
 
