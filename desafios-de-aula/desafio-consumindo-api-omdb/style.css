@@ -11,9 +11,25 @@ header{
    align-items: center;
 }
 
+.carousel-item {
+   display: none;
+   width: 100%;
+   height: 350px;
+   justify-content: space-evenly;
+   align-items: center;
+   backface-visibility: hidden;
+   flex-wrap: nowrap;
+ }
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
+}
+
 .poster{
-   width: 200px;
-   height: 300px;
+   width: 14%;
+   height: 100%;
    margin: 5px;
    border-radius: 10px;
 }
