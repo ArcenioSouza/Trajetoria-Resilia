@@ -26,4 +26,10 @@
    })
 })()
 
+const buttonBuscar = document.querySelector('#btnBuscar')
+
+buttonBuscar.addEventListener('click', () => {
+   window.location = './pagBuscar.html'
+})
+
 

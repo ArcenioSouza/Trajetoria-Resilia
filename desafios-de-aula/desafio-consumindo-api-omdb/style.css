@@ -7,8 +7,23 @@
 header{
    height: 100px;
    display: flex;
-   justify-content: center;
+   justify-content: space-evenly;
    align-items: center;
+}
+
+header label{
+   margin-right: 15px;
+   font-size: 22px;
+   font-weight: bold;
+}
+
+header button{
+   margin-left: 15px;
+   padding: 5px 25px;
+}
+
+header input{
+   padding: 5px;
 }
 
 .carousel-item {
@@ -32,4 +47,26 @@ header{
    height: 100%;
    margin: 5px;
    border-radius: 10px;
+}
+
+.posterBusca{
+   width: 300px;
+   height: 400px;
+   margin: 5px;
+   border-radius: 10px;
+}
+
+#resultBusca{
+   width: 100%;
+}
+
+.imagens-busca{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+#home:hover{
+   cursor: pointer;
 }
