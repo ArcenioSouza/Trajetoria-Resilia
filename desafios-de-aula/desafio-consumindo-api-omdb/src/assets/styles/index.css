@@ -19,7 +19,7 @@ header{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 5px 10%;
+   padding: 5px 3%;
    border-bottom: 2px solid #F29849;
 }
 
@@ -60,6 +60,9 @@ header button:active{
    padding: 3% 3%;
    height: 50vh;
    background-image: url("../img/backgroundHome.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   object-fit: cover;
    border-bottom: 2px solid #F29849;
 }
 
@@ -141,4 +144,95 @@ header button:active{
 
 #home:hover{
    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+   .title{
+      border-bottom: none;
+   }
+   
+   .title h1{
+      font-size: 45px;
+   }
+
+   #cards{
+      bottom: 10vh;
+   }
+
+}
+
+@media (max-width: 700px) {
+   .title{
+      border-bottom: none;
+   }
+   
+   .title h1{
+      font-size: 35px;
+   }
+
+   #cards{
+      bottom: 10vh;
+   }
+
+   .poster{
+      width: 30%;
+      height: 100%;
+      margin: 5px;
+      border-radius: 10px;
+   }
+
+   .title button{
+      width: 165px;
+      height: 40px;
+      border-radius: 30px;
+      background-color: #F29849;
+      color: #fff;
+      font-size: 14px;
+      border: 2px solid #fff;
+      margin-top: 2%;
+   }
+
+   header h1{
+      color: #F29849;
+      font-size: 30px;
+      font-family: 'Allerta Stencil', sans-serif;
+      margin: 0;
+   }
+   
+   header button{
+      width: 100px;
+      margin-left: 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: #F29849;
+      border: 2px solid #fff;
+      color: #fff;
+      font-size: 16px;
+   }
+
+}
+
+@media (max-width: 500px) {
+   .poster{
+      width: 45%;
+      height: 100%;
+      margin: 5px;
+      border-radius: 10px;
+   }
+
+   .title h1{
+      margin-top: 10%;
+      font-size: 25px;
+   }
+
+   .title button{
+      width: 150px;
+      height: 35px;
+      border-radius: 30px;
+      background-color: #F29849;
+      color: #fff;
+      font-size: 14px;
+      border: 2px solid #fff;
+      margin-top: 2%;
+   }
 }
