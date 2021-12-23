@@ -29,7 +29,15 @@
 const buttonBuscar = document.querySelector('#btnBuscar')
 
 buttonBuscar.addEventListener('click', () => {
-   window.location = './pagBuscar.html'
+   // window.location = './pagBuscar.html'
+   
 })
+
+setTimeout(() => {
+   let imagensCarousel = document.querySelectorAll('.poster')
+   Array.from(imagensCarousel).forEach(e => e.addEventListener('click', (e) => {
+      console.log(e.target.id)
+   }))
+},[1000])
 
 

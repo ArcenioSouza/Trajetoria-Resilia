@@ -1,0 +1,68 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+header{
+   height: 50px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.container-informacoes{
+   display: flex;
+   padding: 0 10%;
+}
+
+#imagem img{
+   width: 95%;
+   height: 95%;
+   border-radius: 10px;
+}
+
+.carousel-item {
+   display: none;
+   width: 100%;
+   height: 350px;
+   justify-content: space-evenly;
+   align-items: center;
+   backface-visibility: hidden;
+   flex-wrap: nowrap;
+ }
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
+}
+
+.poster{
+   width: 24%;
+   height: 100%;
+   margin: 5px;
+   border-radius: 10px;
+}
+
+.posterBusca{
+   width: 300px;
+   height: 400px;
+   margin: 5px;
+   border-radius: 10px;
+}
+
+#resultBusca{
+   width: 100%;
+}
+
+.imagens-busca{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+#home:hover{
+   cursor: pointer;
+}
