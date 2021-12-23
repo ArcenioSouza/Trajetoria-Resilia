@@ -4,19 +4,19 @@ class Carousel {
       return `
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
          <div class="carousel-inner">
-            <div class="carousel-item active" id="carousel1">
+            <div class="carousel-item active filmes" id="carousel1">
                <img class="poster" id="${listaDeFilmes[0]._id}" src="${listaDeFilmes[0]._url}">
                <img class="poster" id="${listaDeFilmes[1]._id}" src="${listaDeFilmes[1]._url}">
                <img class="poster" id="${listaDeFilmes[2]._id}" src="${listaDeFilmes[2]._url}">
                <img class="poster" id="${listaDeFilmes[3]._id}" src="${listaDeFilmes[3]._url}">
             </div>
-            <div class="carousel-item" id="carousel2">
+            <div class="carousel-item filmes" id="carousel2">
                <img class="poster" id="${listaDeFilmes[4]._id}" src="${listaDeFilmes[4]._url}">
                <img class="poster" id="${listaDeFilmes[5]._id}" src="${listaDeFilmes[5]._url}">
                <img class="poster" id="${listaDeFilmes[6]._id}" src="${listaDeFilmes[6]._url}">
                <img class="poster" id="${listaDeFilmes[7]._id}" src="${listaDeFilmes[7]._url}">
             </div>
-            <div class="carousel-item" id="carousel3">
+            <div class="carousel-item filmes" id="carousel3">
                <img class="poster" id="${listaDeFilmes[8]._id}" src="${listaDeFilmes[8]._url}">
                <img class="poster" id="${listaDeFilmes[9]._id}" src="${listaDeFilmes[9]._url}">
                <img class="poster" id="${listaDeFilmes[10]._id}" src="${listaDeFilmes[10]._url}">

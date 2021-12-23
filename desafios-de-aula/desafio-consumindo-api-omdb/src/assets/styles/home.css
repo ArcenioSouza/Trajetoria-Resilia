@@ -15,11 +15,11 @@ body{
 }
 
 header{
-   height: 10vh;
+   width: 100%;
+   height: 7vh;
    display: flex;
-   justify-content: space-between;
    align-items: center;
-   padding: 5px 3%;
+   padding: 5px 1%;
    border-bottom: 2px solid #F29849;
 }
 
@@ -28,87 +28,99 @@ header h1{
    font-size: 40px;
    font-family: 'Allerta Stencil', sans-serif;
    margin: 0;
+   width: 16%;
 }
 
-header button{
-   width: 174px;
-   margin-left: 15px;
-   padding: 5px 25px;
-   border-radius: 5px;
-   background-color: #F29849;
-   border: 2px solid #fff;
-   color: #fff;
-   font-size: 18px;
-}
-
-header button:hover{
-   border-color: #F29849;
-   color: #F29849;
-   background-color: #fff;
-}
-
-header button:active{
-   background-color: #F29849;
-   border: 2px solid #fff;
-   color: #fff;
-}
-
-.title{
+nav{
    display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   padding: 3% 3%;
-   height: 50vh;
-   background-image: url("../img/backgroundHome.png");
-   background-repeat: no-repeat;
-   background-size: cover;
-   object-fit: cover;
-   border-bottom: 2px solid #F29849;
+   justify-content: space-between;
+   align-items: center;
+   width: 84%;
 }
 
-.title h1{
+#lista-navegacao{
    color: #fff;
-   font-family: 'Calistoga', cursive;
-   font-size: 65px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 0;
+   list-style: none;
+   padding-left: 5%;
 }
 
-.title button{
-   width: 265px;
-   height: 40px;
-   border-radius: 30px;
-   background-color: #F29849;
+#lista-login{
    color: #fff;
-   font-size: 18px;
-   border: 2px solid #fff;
-   margin-top: 2%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   margin: 0;
+   list-style: none;
 }
 
-.title button:hover{
-   border-color: #F29849;
-   color: #F29849;
-   background-color: #fff;
+#lista-login li{
+   display: flex;
+   padding: 3px;
+   align-items: center;
+   justify-content: center;
+   margin-right: 10px;
 }
 
-.title button:active{
-   background-color: #F29849;
-   border: 2px solid #fff;
-   color: #fff;
+#lista-login img{
+   margin-right: 5px;
+}
+
+#lista-login #seta{
+   margin-right: 0;
+}
+
+#lista-navegacao li{
+   display: flex;
+   margin-right: 20px;
+   padding: 3px;
+   align-items: center;
+   justify-content: center;
+}
+
+#lista-navegacao li:hover{
+   border: 1px solid #F29849;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#lista-navegacao img{
+   margin-right: 5px;
 }
 
 #cards{
    width: 100%;
-   position: relative;
-   bottom: 5vh;
+   position: absolute;
+   bottom: 2vh;
 }
 
-.carousel-item {
+.filmes {
    display: none;
    width: 100%;
-   height: 43vh;
+   height: 47vh;
    justify-content: space-evenly;
    align-items: center;
    backface-visibility: hidden;
    flex-wrap: nowrap;
+ }
+
+ .filmeSlide {
+   display: none;
+   width: 100%;
+   height: 60vh;
+   justify-content: space-evenly;
+   align-items: center;
+   backface-visibility: hidden;
+   flex-wrap: nowrap;
+ }
+
+ #image-title{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #F29849;
  }
 
 .carousel-item.active,
@@ -118,7 +130,7 @@ header button:active{
 }
 
 .poster{
-   width: 20%;
+   width: 22%;
    height: 100%;
    margin: 5px;
    border-radius: 10px;
@@ -155,9 +167,6 @@ header button:active{
       font-size: 45px;
    }
 
-   #cards{
-      bottom: 10vh;
-   }
 }
 
 @media (max-width: 700px) {
