@@ -8,6 +8,6 @@ class Filmes {
       this._ano = ano,
       this._tempo = tempo,
       this._elenco = elenco,
-      this._genero = genero,
+      this._genero = genero
    }
 }
