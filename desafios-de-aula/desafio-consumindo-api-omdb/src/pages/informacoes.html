@@ -10,75 +10,43 @@
          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="style.css">
-      <title>Document</title>
+      <link rel="stylesheet" href="../assets/styles/informacoes.css">
+      <title>ResiliaFlix</title>
    </head>
    <body>
       <header>
-         <h1>Informações do filme</h1>
+         <h1>ResiliaFlix</h1>
+         <nav>
+            <ul id="lista-navegacao">
+               <li id="pagina-inicial"><img src="../assets/img/home.png">Página Inicial</li>
+               <li><img src="../assets/img/contato.png">Contatos</li>
+               <li><img src="../assets/img/filmes.png">Filmes</li>
+               <li><img src="../assets/img/buscar.png">Buscar</li>
+            </ul>
+            <ul id="lista-login">
+               <li><img src="../assets/img/foto-perfil.png"><span id="nome-usuario">Arcenio Souza</span></li>
+               <li><img src="../assets/img/configuracao.png"></li>
+            </ul>
+         </nav>
+         
       </header>
       <main>
          <div class="container-informacoes">
-            <div id="imagem">
-               <img src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
-            </div>
-            <div id="informacoes">
-               <h1 id="titulo">Titulo</h1>
-               <h5><span id="ano">Ano</span>-<span id="tempo">Tempo-filme</span></h5>
-               <p id="descricao">Descrição</p>
-               <p id="elenco">Elenco</p>
-               <p id="genero">Genero</p>
-            </div>
-         </div>
-         <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-bs-ride="carousel"
-         >
-            <div class="carousel-inner">
-               <div class="carousel-item active" id="carousel1">
-                  <img class="poster" src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
-                  <img class="poster" src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
-                  <img class="poster" src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
-                  <img class="poster" src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
+            <div class="background-informacoes">
+               <div id="imagem">
+                  <img src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
                </div>
-               <div class="carousel-item" id="carousel2">
-                  <img class="poster" src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
-                  <img class="poster" src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
-                  <img class="poster" src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
-                  <img class="poster" src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
+               <div id="informacoes">
+                  <h1 id="titulo">Titulo</h1>
+                  <h5><span id="ano">Ano</span>-<span id="tempo">Tempo-filme</span></h5>
+                  <p id="descricao">Descrição</p>
+                  <p id="elenco">Elenco</p>
+                  <p id="genero">Genero</p>
                </div>
-               <div class="carousel-item" id="carousel2">
-                  <img class="poster" src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
-                  <img class="poster" src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
-                  <img class="poster" src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
-                  <img class="poster" src="https://capas-p.imagemfilmes.com.br/164002_000_p.jpg" alt="" />
-               </div>
-            </div>
-            <button
-               class="carousel-control-prev"
-               type="button"
-               data-bs-target="#carouselExampleControls"
-               data-bs-slide="prev"
-            >
-               <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-               ></span>
-               <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-               class="carousel-control-next"
-               type="button"
-               data-bs-target="#carouselExampleControls"
-               data-bs-slide="next"
-            >
-               <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-               ></span>
-               <span class="visually-hidden">Next</span>
-            </button>
+            </div>            
+         </div>        
+         <div id="cards">
+
          </div>
       </main>
       <script
@@ -87,6 +55,10 @@
          crossorigin="anonymous"
       ></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-      <script src="informacoes.js"></script>
+      <script src="../model/Filmes.js"></script>
+      <script src="../model/ListaFilmes.js"></script>
+      <script src="../view/Carousel.js"></script>
+      <script src="../controller/FilmesController.js"></script>
+      <script src="../../index.js"></script>
    </body>
 </html>

@@ -8,7 +8,11 @@ window.addEventListener('load', () => {
    
    setTimeout(()=>{
       let largura = window.screen.width
-      if(largura > 1000){
+      let href = window.location.href
+
+      if(largura > 1000 && href.indexOf('informacoes') > 0){
+         cards.innerHTML = carousel._templatePosterInformacoes(listaDeFilmes._listaFilmes)
+      } else if(largura > 1000){
          cards.innerHTML = carousel._templatePosterDesktop(listaDeFilmes._listaFilmes)
       } else if (largura > 500){
          cards.innerHTML = carousel._templatePosterTablet(listaDeFilmes._listaFilmes)
@@ -17,3 +21,4 @@ window.addEventListener('load', () => {
       }
    },[1000])   
 })
+

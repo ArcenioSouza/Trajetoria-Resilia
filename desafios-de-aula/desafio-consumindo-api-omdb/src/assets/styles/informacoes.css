@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   width: 100%;
+   max-height: 100vh;
+   background-color: #0D0126;
+}
+
+header{
+   width: 100%;
+   height: 7vh;
+   display: flex;
+   align-items: center;
+   padding: 5px 1%;
+   border-bottom: 2px solid #F29849;
+}
+
+header h1{
+   color: #F29849;
+   font-size: 40px;
+   font-family: 'Allerta Stencil', sans-serif;
+   margin: 0;
+   width: 16%;
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 84%;
+}
+
+#lista-navegacao{
+   color: #fff;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 0;
+   list-style: none;
+   padding-left: 5%;
+}
+
+#lista-login{
+   color: #fff;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   margin: 0;
+   list-style: none;
+}
+
+#lista-login li{
+   display: flex;
+   padding: 3px;
+   align-items: center;
+   justify-content: center;
+   margin-right: 10px;
+}
+
+#lista-login img{
+   margin-right: 5px;
+}
+
+#lista-login #seta{
+   margin-right: 0;
+}
+
+#lista-navegacao li{
+   display: flex;
+   margin-right: 20px;
+   padding: 3px;
+   align-items: center;
+   justify-content: center;
+}
+
+#lista-navegacao li:hover{
+   border: 1px solid #F29849;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#lista-navegacao img{
+   margin-right: 5px;
+}
+
+.background-informacoes{
+   width: 70%;
+   height: 85%;
+   background-color: rgba(0, 0, 0, 0.404);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 15px;
+}
+
+#imagem{
+   margin-right: 20px;
+}
+
+#imagem img{
+   border-radius: 10px;
+}
+
+#informacoes {
+   color: #fff;
+}
+
+.container-informacoes{
+   display: flex;
+   align-items: center;
+   height: 58vh;
+   width: 100%;
+   justify-content: center;
+   background-image: url('../img/backgroundInfo.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-bottom: 2px solid #F29849;
+}
+
+#cards{
+   width: 100%;
+   position: absolute;
+   bottom: 2vh;
+}
+
+.filmes {
+   display: none;
+   width: 100%;
+   height: 35vh;
+   justify-content: center;
+   align-items: center;
+   backface-visibility: hidden;
+   flex-wrap: nowrap;
+ }
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
+}
+
+.poster{
+   width: 16%;
+   height: 35vh;
+   margin: 5px;
+   border-radius: 10px;
+}
+
+#home:hover{
+   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+   .title{
+      border-bottom: none;
+   }
+   
+   .title h1{
+      font-size: 45px;
+   }
+
+}
+
+@media (max-width: 700px) {
+   .title{
+      border-bottom: none;
+   }
+   
+   .title h1{
+      font-size: 35px;
+   }
+
+   #cards{
+      bottom: 10vh;
+   }
+
+   .poster{
+      width: 30%;
+      height: 100%;
+      margin: 5px;
+      border-radius: 10px;
+   }
+
+   .title button{
+      width: 165px;
+      height: 40px;
+      border-radius: 30px;
+      background-color: #F29849;
+      color: #fff;
+      font-size: 14px;
+      border: 2px solid #fff;
+      margin-top: 2%;
+   }
+
+   header h1{
+      color: #F29849;
+      font-size: 30px;
+      font-family: 'Allerta Stencil', sans-serif;
+      margin: 0;
+   }
+   
+   header button{
+      width: 100px;
+      margin-left: 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: #F29849;
+      border: 2px solid #fff;
+      color: #fff;
+      font-size: 16px;
+   }
+
+}
+
+@media (max-width: 500px) {
+   .poster{
+      width: 45%;
+      height: 100%;
+      margin: 5px;
+      border-radius: 10px;
+   }
+
+   .title h1{
+      margin-top: 10%;
+      font-size: 25px;
+   }
+
+   .title button{
+      width: 150px;
+      height: 35px;
+      border-radius: 30px;
+      background-color: #F29849;
+      color: #fff;
+      font-size: 14px;
+      border: 2px solid #fff;
+      margin-top: 2%;
+   }
+}
