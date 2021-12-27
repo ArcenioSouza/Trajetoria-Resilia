@@ -1,0 +1,1 @@
+document.querySelector('#pagina-inicial').addEventListener('click', () => location = '../../index.html')

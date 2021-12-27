@@ -30,12 +30,12 @@ header h1{
    font-size: 40px;
    font-family: 'Allerta Stencil', sans-serif;
    margin: 0;
-   width: 16%;
+   width: 20%;
 }
 
 nav{
    display: flex;
-   justify-content: space-between;
+   justify-content: flex-start;
    align-items: center;
    width: 84%;
 }
@@ -43,7 +43,7 @@ nav{
 #lista-navegacao{
    color: #fff;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: flex-start;
    align-items: center;
    margin: 0;
    list-style: none;
@@ -57,6 +57,8 @@ nav{
    align-items: center;
    margin: 0;
    list-style: none;
+   position: absolute;
+   right: 2px;
 }
 
 #lista-login li{
@@ -181,6 +183,29 @@ nav{
    
    .title h1{
       font-size: 45px;
+   }
+
+   .background-informacoes{
+      width: 80%;
+   }
+
+}
+
+@media (max-width: 1000px) {
+   .title{
+      border-bottom: none;
+   }
+   
+   .title h1{
+      font-size: 45px;
+   }
+
+   .background-informacoes{
+      width: 80%;
+   }
+
+   .poster{
+      width: 24%;
    }
 
 }
