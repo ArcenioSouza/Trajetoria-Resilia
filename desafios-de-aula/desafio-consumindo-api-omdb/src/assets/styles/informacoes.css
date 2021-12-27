@@ -104,6 +104,7 @@ nav{
    justify-content: center;
    align-items: center;
    border-radius: 15px;
+   margin-top: 2%;
 }
 
 #titulo{
@@ -133,7 +134,6 @@ nav{
 
 .container-informacoes{
    display: flex;
-   align-items: center;
    height: 58vh;
    width: 100%;
    justify-content: center;
@@ -201,11 +201,71 @@ nav{
    }
 
    .background-informacoes{
-      width: 80%;
+      width: 90%;
    }
 
    .poster{
       width: 24%;
+   }
+
+   header{
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 5px 1%;
+      border-bottom: 2px solid #F29849;
+   }
+   
+   header h1{
+      color: #F29849;
+      font-size: 40px;
+      font-family: 'Allerta Stencil', sans-serif;
+      margin: 0;
+      width: 100%;
+   }
+
+   nav{
+      width: 100%;
+      justify-content: center;
+   }
+
+   #lista-login{
+      position: absolute;
+      right: 1%;
+      top: 1.7%;
+   }
+   
+   #lista-navegacao{
+      color: #fff;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0;
+      list-style: none;
+      padding-left: 5%;
+      font-size: 12px;
+   }
+
+   #lista-navegacao li img{
+      width: 16px;
+      height: 16px;
+   }
+
+   #lista-navegacao li{
+      margin-right: 10px;
+      
+   }
+   
+   #lista-login li span{
+      font-size: 14px;      
+   }
+
+   #lista-login li img{
+      width: 18px;
+      height: 18px;    
    }
 
 }
@@ -219,13 +279,8 @@ nav{
       font-size: 35px;
    }
 
-   #cards{
-      bottom: 10vh;
-   }
-
    .poster{
-      width: 30%;
-      height: 100%;
+      width: 24%;
       margin: 5px;
       border-radius: 10px;
    }
@@ -259,12 +314,43 @@ nav{
       font-size: 16px;
    }
 
+   .background-informacoes{
+      width: 98%;
+      height: 85%;
+      padding: 2%;
+      background-color: rgba(0, 0, 0, 0.521);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      margin-top: 2%;
+   }
+   
+   #titulo{
+      font-family: 'Calistoga', sans-serif;
+      font-size: 25px;
+   }
+   
+   #imagem{
+      margin-right: 20px;
+      height: 100%;
+   }
+   
+   #imagem img{
+      border-radius: 10px;
+      height: 100%;
+   }
+   
+   #informacoes {
+      height: 90%;
+      font-size: 14px;
+   }
+
 }
 
 @media (max-width: 500px) {
    .poster{
-      width: 45%;
-      height: 100%;
+      width: 48%;
       margin: 5px;
       border-radius: 10px;
    }
@@ -283,5 +369,19 @@ nav{
       font-size: 14px;
       border: 2px solid #fff;
       margin-top: 2%;
+   }
+
+   .background-informacoes{
+      height: 85%;
+   }
+
+   #informacoes {
+      width: 90%;
+      height: 90%;
+      font-size: 14px;
+   }
+
+   #imagem{
+      display: none;
    }
 }

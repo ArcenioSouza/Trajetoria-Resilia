@@ -160,6 +160,12 @@ header button:active{
    }
 }
 
+@media (max-width: 1000px) {
+   .poster{
+      width: 31%;
+   }
+}
+
 @media (max-width: 700px) {
    .title{
       border-bottom: none;
