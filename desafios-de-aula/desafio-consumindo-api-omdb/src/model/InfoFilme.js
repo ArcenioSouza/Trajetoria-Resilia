@@ -1,0 +1,5 @@
+class InfoFilme {
+   
+   _infoFilme = []
+
+}

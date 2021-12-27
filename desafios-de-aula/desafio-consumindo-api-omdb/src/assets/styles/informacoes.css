@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Biryani&display=swap');
+
 *{
    padding: 0;
    margin: 0;
@@ -92,25 +94,39 @@ nav{
 }
 
 .background-informacoes{
-   width: 70%;
+   width: 60%;
    height: 85%;
-   background-color: rgba(0, 0, 0, 0.404);
+   padding: 1%;
+   background-color: rgba(0, 0, 0, 0.521);
    display: flex;
    justify-content: center;
    align-items: center;
    border-radius: 15px;
 }
 
+#titulo{
+   font-family: 'Calistoga', sans-serif;
+}
+
 #imagem{
    margin-right: 20px;
+   height: 100%;
 }
 
 #imagem img{
    border-radius: 10px;
+   height: 100%;
 }
 
 #informacoes {
+   height: 90%;
    color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   font-family: 'Biryani', sans-serif;
+   font-weight: bold;
 }
 
 .container-informacoes{
