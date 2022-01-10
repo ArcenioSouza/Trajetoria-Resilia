@@ -1,12 +1,18 @@
 class Televisao
 {
    constructor(tamanho, marca, preco){
-      try{
-         this.tamanho = tamanho,
-         this.marca = marca,
-         this.preco = preco
-       } catch(e){
-         return e.message
+      if(typeof tamanho === 'number'){
+         this.tamanho = tamanho
+       }else {
+         throw new Error('Tamanho inválido')
+       } if(typeof preco != 'number'){
+         throw new Error('Preço inválido')
+       } else {
+         this.preco = preco 
+       }if(marca === 'Phillips' || marca === 'LG' || marca === 'TLC' || marca === 'Sony'){
+         this.marca = marca
+       } else {
+         throw new Error('Marca inválida')
        }
     }
   getTamanho(){
@@ -25,7 +31,11 @@ class Televisao
 class TelevisaoView
 {  
   renderizar(tv){
-    return `<div><p><span class='size'>${tv.tamanho}</span></p><p>${tv.marca}</p><p>${tv.preco}</p><div>`
+    return `<div>
+      <p><span class='size'>${tv.tamanho}</span></p>
+      <p>${tv.marca}</p>
+      <p>${tv.preco}</p>
+      <div>`
   }
 }
 
