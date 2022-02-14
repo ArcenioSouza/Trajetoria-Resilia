@@ -1,0 +1,1 @@
+select cast(criado_em as date) as dia, descricao, count(nome) as contagem from eventos where nome like 'treinado' group by dia, descricao;

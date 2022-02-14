@@ -11,7 +11,6 @@ const withdraw = amount => {
 
    console.log(nota100, valor)
 
-
    if(valor%20 == 10 && valor != 50 && valor != 90 && valor != 70){
       nota100 -= 1
       valor += 100
