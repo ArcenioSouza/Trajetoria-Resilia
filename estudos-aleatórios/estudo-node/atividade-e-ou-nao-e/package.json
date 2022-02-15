@@ -1,0 +1,15 @@
+{
+  "name": "atividade-e-ou-nao-e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "e-ou-nao-e.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  },
+  "type": "module"
+}

@@ -1,11 +1,17 @@
 const teste = {jacare: 15}
 
 new Promise((resolve, reject) => {
-   if (teste.jacare){
-      resolve('Deu jacaré no jogo do bicho')
-   } else {
-      reject('O agiota tá vindo cobrar!')
-   }
+   setTimeout(() => {
+      if (teste.jacare){
+         resolve('Deu jacaré no jogo do bicho')
+      } else {
+         reject('O agiota tá vindo cobrar!')
+      }
+   }, 5000)
 })
-.then(retorno => console.log(retorno))
+.then(retorno => {
+   console.log(retorno)
+   console.log('Qdo vai executar')
+})
 .catch(erro => console.log(erro))
+
