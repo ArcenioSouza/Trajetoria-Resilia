@@ -1,4 +1,4 @@
-export function getStatus(app){
+export function consultarStatus(app){
    app.get("/status", (req, res) => {
       res.send({
          1:{
