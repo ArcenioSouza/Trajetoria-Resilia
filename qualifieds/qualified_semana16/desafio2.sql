@@ -1,0 +1,1 @@
+select clientes.id as cliente_id, clientes.nome as nome_cliente from clientes left outer join pedidos on clientes.id = pedidos.cliente_id where pedidos.cliente_id IS NULL order by cliente_id;  
