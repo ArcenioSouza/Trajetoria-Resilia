@@ -1,0 +1,1 @@
+select * from funcionarios where salario > (select salario from funcionarios where id = 30);
