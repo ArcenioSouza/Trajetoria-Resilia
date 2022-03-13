@@ -1,0 +1,1 @@
+select pessoas.id, pessoas.nome, count(brinquedos.pessoas_id) as quantidade_brinquedos from pessoas left join brinquedos on pessoas.id = brinquedos.pessoas_id group by pessoas.id;
