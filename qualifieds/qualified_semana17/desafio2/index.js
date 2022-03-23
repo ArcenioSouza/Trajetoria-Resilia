@@ -22,7 +22,7 @@ app.post("/cifrar/:mensagem/:passos", (req, res) => {
         break;
       }
    }
-   console.log(textCripto)
+
    res.send({
       "texto": texto,
       "passos": passos,
